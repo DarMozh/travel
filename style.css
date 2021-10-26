@@ -1,0 +1,406 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+header{
+    
+     background: url('/images/backgroundHeader.jpg');
+    background-size: 100% 100%;
+    height: 700px;
+   
+}
+
+  header .header {
+      max-width: 80%;
+      margin: 0 auto;
+
+  }
+  header .header .headerUp{
+    display:flex;
+    justify-content: space-between;
+  }
+.menu{
+    display: flex;
+}
+.menu div{
+    margin: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.menu a{
+    color: seashell;
+    text-decoration:none;
+}
+.menu div:hover{
+    background-color: #d03958;
+    transition-duration: 500ms;
+ 
+}
+.header-buttom{
+    display: flex;
+    justify-content: space-between;
+}
+.label-life{
+  margin-top: 40px;
+
+  max-width: 40%;
+}
+.label-life .sentence span{
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 90px;
+  color:#d03958;
+  
+}
+
+
+.registration { 
+    height:520px ;
+    width: 400px;
+    background-color:#d03958;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 25%;
+    position: relative;
+    top: 200px;
+  }
+  .registration p{
+    text-transform: uppercase;
+    color: seashell;
+    margin: 10px;
+  }
+  .registration .info {
+    width: 90%;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px ;
+    color: #d03958;
+    text-transform: uppercase;
+  }
+  .registration div{
+    align-self: flex-start;
+    color: seashell;
+    font-size: large;
+    margin-left: 20px;
+    margin: 15px ;
+}
+.registration button{
+  background-color:black;
+  color:seashell;
+  width:90% ;
+  height: 10%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.sentence {
+  font-size: 90px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.paragraph {
+  color: seashell;
+  margin: 50px;
+  font-size: 20px;
+
+}
+.our-services{
+  max-width: 80%;
+  margin:auto ;
+}
+.services span{
+  color:#d03958 ;
+  font-size: 80px;
+}
+.services{
+  font-size: 80px;
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+  margin:50px;
+}
+.icons p{
+   font-size: 25px;
+   margin: 25px;
+   text-align: center;
+}
+.icons img{
+  height: 150px;
+  width: 150px;
+}
+.icons div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.element{
+  height: 125px;
+  background-color:#d03958 ;
+}
+.element-two{
+  max-width: 80%;
+  margin:auto;
+  display: flex;
+  justify-content: space-between;
+}
+.inform{
+  font-size: 25px;
+  color:seashell;
+  margin:15px;
+}
+button{
+  background-color: #e3d5b8;
+  width: 266px;
+  height: 62px;
+  border-radius: 10px;
+ font-size: 25px;
+ text-transform: uppercase;
+ margin:26px;
+}
+button:hover:not(.send){
+  background-color:seashell;
+   transition-duration: 500ms;
+}
+.pricing{
+  background-color:#e3d5b8;
+  
+}
+.block{
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: auto;
+ text-align: center;
+ font-size: 30px ;
+}
+.sign{
+  background-color: #d03958;
+}
+.block div {
+  background-color: seashell;
+}
+.price{
+  text-transform: uppercase;
+  text-align: center;
+  padding: 40px;
+  font-size: 60px;
+}
+.count{
+  color: #d03958;
+  font-size: 70px;
+}
+.start , .business , .prof{
+  border-radius: 10px;
+}
+.popular{
+  border: 40px solid transparent;
+  border-left: 40px solid #d03958;
+  border-top: 40px solid #d03958; ;
+  position: absolute;
+  top: 0%;
+}
+.business{
+  position: relative;
+}
+.pop{
+  position: absolute;
+  top: 0%;
+}
+.popular p{
+  position: absolute;
+}
+.division {
+  display: flex;
+  padding: 20px;
+  margin: 30px;
+}
+.testim{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 20px;
+  text-align: center;
+}
+.division img{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+}
+.division a {
+  color: #d03958;
+  font-size: 25px;
+}
+.division p{
+  font-size: 25px;
+}
+.division:last-child{
+  background-color:#e3d5b8;
+}
+.photo{
+  display: flex;
+  flex-wrap:wrap;
+}
+.photo img{
+  margin:11px;
+  flex-basis: 27%;
+  border-radius: 50% ;
+  height: 130px;
+  box-sizing: border-box;
+  width: 70px;
+}
+.coment{
+  display: flex;
+  justify-content: space-between;
+}
+.table{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 20px;
+  color: #d03958;
+  text-align: center;
+}
+.review{
+  max-width: 80%;
+  margin: auto;
+}
+.rubric a{
+  color: #d03958;
+  font-size: 25px;
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 20px;
+}
+.end{
+  background-color: black;
+  height: 184px;
+}
+.bottom p{
+  color:seashell;
+  font-size: 25px;
+  margin:25px;
+}
+.bottom span{
+  color: #d03958;
+  margin: 25px;
+}
+.bottom{
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+ .close{
+  color:black;
+  height:50px;
+  width:100px;
+  font-size: 20px;
+  margin: 10px;
+  background: #d03958;
+}
+.window-body p{
+  font-size: 20px;
+  margin: 10px;
+}
+.window-header{
+  font-size:30px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.window{
+  border:1px solid black ;
+  height: 200px;
+  width: 700px;
+  position: fixed;
+  top:10%;
+  bottom: 0;
+  left: 33%;
+  right: 0;
+  background: seashell;
+}
+.window-appear{
+  opacity: 0.1;
+}
